@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  backend:
+    container_name: backend
+    ports:
+      - 3000:3000
+    environment:
+      - NODE_ENV=compose
+      - GOOGLEAI_SECRET=AIzaSyBae9aE964loCaCKcPC2mOmWmqYlaf-zSA
+    build: ./backend
+  frontend:
+    container_name: frontend
+    ports:
+      - 5173:80
+    build: ./frontend

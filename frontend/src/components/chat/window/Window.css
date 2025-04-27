@@ -1,0 +1,25 @@
+.Window {
+  flex: 1;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  gap: 12px;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+.Window > p {
+  font-style: italic;
+  color: #6b7280;
+  margin: 8px 0;
+  padding-left: 16px;
+}
+
+@media (max-width: 480px) {
+  .Window {
+    padding: 12px 8px;
+  }
+}

@@ -1,0 +1,59 @@
+.Bubble {
+  padding: 12px 16px;
+  border-radius: 12px;
+  max-width: 80%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 8px;
+  position: relative;
+  word-wrap: break-word;
+}
+
+.Bubble p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.Bubble.user {
+  background-color: #e0f2fe;
+  align-self: flex-end;
+  margin-left: auto;
+  border-bottom-right-radius: 4px;
+}
+
+.Bubble.ai {
+  background-color: #f3f4f6;
+  align-self: flex-start;
+  margin-right: auto;
+  border-bottom-left-radius: 4px;
+}
+
+.Bubble .syntax-highlighter-container {
+  position: relative;
+}
+
+.Bubble .copy-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  color: #fff;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .Bubble {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .Bubble {
+    max-width: 95%;
+    padding: 10px 14px;
+  }
+}
